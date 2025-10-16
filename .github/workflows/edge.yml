@@ -28,7 +28,7 @@ jobs:
           go get github.com/google/renameio@latest
           go clean -modcache
           go mod tidy
-          ls $HOME/go/pkg/mod/github.com/google/renameio
+          ls $HOME/go/pkg/mod/github.com/google #/renameio
       - name: Build Go binaries for multiple platforms
         run: |
           # Linux ARM64
