@@ -144,7 +144,7 @@ func extractZip(tmpDir, src, dest string) error {
 		}
 
 		// Create the file as a temporary file first
-		tempFile, err := renameio.TempFile(tmpDir, path)
+		tempFile, err := renameio.TempFile(tmpDir, filepath.Base(path))
 		if err != nil {
 			return err
 		}
