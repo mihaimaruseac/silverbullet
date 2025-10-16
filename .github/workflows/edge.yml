@@ -47,9 +47,9 @@ jobs:
           GOOS=darwin GOARCH=amd64 go build -o silverbullet .
           zip silverbullet-server-darwin-x86_64.zip silverbullet
 
-          # Windows x86_64
-          GOOS=windows GOARCH=amd64 go build -o silverbullet.exe .
-          zip silverbullet-server-windows-x86_64.zip silverbullet.exe
+          ## Windows x86_64
+          #GOOS=windows GOARCH=amd64 go build -o silverbullet.exe .
+          #zip silverbullet-server-windows-x86_64.zip silverbullet.exe
 
       - name: Update edge release
         uses: softprops/action-gh-release@v1
