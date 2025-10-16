@@ -24,7 +24,7 @@ jobs:
           deno task build-production
           deno task build-plug-compile
       - name: Debug
-        run |
+        run: |
           go get github.com/google/renameio@latest
           go clean -modcache
           go mod tidy
